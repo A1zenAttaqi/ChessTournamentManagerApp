@@ -1,0 +1,385 @@
+{
+  "name": "DOTA",
+  "location": "Casablanca",
+  "start_date": "2023-12-14",
+  "end_date": "2023-12-15",
+  "number_of_rounds": 4,
+  "current_round": 5,
+  "rounds": [
+    {
+      "name": "Round 1",
+      "start_time": "2023-12-14 22:32:09",
+      "end_time": "2023-12-14 22:32:12",
+      "matches": [
+        {
+          "player1": {
+            "first_name": "Alexei",
+            "last_name": "Stukov",
+            "birth_date": "1992-02-08",
+            "chess_id": "SH00003",
+            "tournaments_participated": ["Tartarus", "Lavidaloca", "DOTA"]
+          },
+          "score1": 1.0,
+          "player2": {
+            "first_name": "Egon",
+            "last_name": "Stetmann",
+            "birth_date": "2001-01-01",
+            "chess_id": "SH00006",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score2": 0.0
+        },
+        {
+          "player1": {
+            "first_name": "Edmund",
+            "last_name": "Duke",
+            "birth_date": "2002-11-02",
+            "chess_id": "SH00001",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score1": 0.0,
+          "player2": {
+            "first_name": "Rory",
+            "last_name": "Swann",
+            "birth_date": "2012-01-01",
+            "chess_id": "SH00007",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score2": 1.0
+        },
+        {
+          "player1": {
+            "first_name": "Gerard",
+            "last_name": "DuGalle",
+            "birth_date": "1997-01-24",
+            "chess_id": "SH00000",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score1": 1.0,
+          "player2": {
+            "first_name": "Samir",
+            "last_name": "Duran",
+            "birth_date": "1993-06-26",
+            "chess_id": "SH00002",
+            "tournaments_participated": ["Tartarus", "DOTA"]
+          },
+          "score2": 0.0
+        },
+        {
+          "player1": {
+            "first_name": "Valerian",
+            "last_name": "Mengsk",
+            "birth_date": "2002-11-02",
+            "chess_id": "SH00005",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score1": 0.0,
+          "player2": {
+            "first_name": "Mira",
+            "last_name": "Han",
+            "birth_date": "2001-03-24",
+            "chess_id": "SH00004",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score2": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "start_time": "2023-12-14 22:32:12",
+      "end_time": "2023-12-14 22:32:16",
+      "matches": [
+        {
+          "player1": {
+            "first_name": "Alexei",
+            "last_name": "Stukov",
+            "birth_date": "1992-02-08",
+            "chess_id": "SH00003",
+            "tournaments_participated": ["Tartarus", "Lavidaloca", "DOTA"]
+          },
+          "score1": 1.0,
+          "player2": {
+            "first_name": "Rory",
+            "last_name": "Swann",
+            "birth_date": "2012-01-01",
+            "chess_id": "SH00007",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score2": 0.0
+        },
+        {
+          "player1": {
+            "first_name": "Gerard",
+            "last_name": "DuGalle",
+            "birth_date": "1997-01-24",
+            "chess_id": "SH00000",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score1": 0.0,
+          "player2": {
+            "first_name": "Mira",
+            "last_name": "Han",
+            "birth_date": "2001-03-24",
+            "chess_id": "SH00004",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score2": 1.0
+        },
+        {
+          "player1": {
+            "first_name": "Egon",
+            "last_name": "Stetmann",
+            "birth_date": "2001-01-01",
+            "chess_id": "SH00006",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score1": 1.0,
+          "player2": {
+            "first_name": "Edmund",
+            "last_name": "Duke",
+            "birth_date": "2002-11-02",
+            "chess_id": "SH00001",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score2": 0.0
+        },
+        {
+          "player1": {
+            "first_name": "Samir",
+            "last_name": "Duran",
+            "birth_date": "1993-06-26",
+            "chess_id": "SH00002",
+            "tournaments_participated": ["Tartarus", "DOTA"]
+          },
+          "score1": 0.0,
+          "player2": {
+            "first_name": "Valerian",
+            "last_name": "Mengsk",
+            "birth_date": "2002-11-02",
+            "chess_id": "SH00005",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score2": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Round 3",
+      "start_time": "2023-12-14 22:32:16",
+      "end_time": "2023-12-14 22:32:19",
+      "matches": [
+        {
+          "player1": {
+            "first_name": "Alexei",
+            "last_name": "Stukov",
+            "birth_date": "1992-02-08",
+            "chess_id": "SH00003",
+            "tournaments_participated": ["Tartarus", "Lavidaloca", "DOTA"]
+          },
+          "score1": 1.0,
+          "player2": {
+            "first_name": "Mira",
+            "last_name": "Han",
+            "birth_date": "2001-03-24",
+            "chess_id": "SH00004",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score2": 0.0
+        },
+        {
+          "player1": {
+            "first_name": "Rory",
+            "last_name": "Swann",
+            "birth_date": "2012-01-01",
+            "chess_id": "SH00007",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score1": 0.0,
+          "player2": {
+            "first_name": "Gerard",
+            "last_name": "DuGalle",
+            "birth_date": "1997-01-24",
+            "chess_id": "SH00000",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score2": 1.0
+        },
+        {
+          "player1": {
+            "first_name": "Egon",
+            "last_name": "Stetmann",
+            "birth_date": "2001-01-01",
+            "chess_id": "SH00006",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score1": 1.0,
+          "player2": {
+            "first_name": "Valerian",
+            "last_name": "Mengsk",
+            "birth_date": "2002-11-02",
+            "chess_id": "SH00005",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score2": 0.0
+        },
+        {
+          "player1": {
+            "first_name": "Edmund",
+            "last_name": "Duke",
+            "birth_date": "2002-11-02",
+            "chess_id": "SH00001",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score1": 0.0,
+          "player2": {
+            "first_name": "Samir",
+            "last_name": "Duran",
+            "birth_date": "1993-06-26",
+            "chess_id": "SH00002",
+            "tournaments_participated": ["Tartarus", "DOTA"]
+          },
+          "score2": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Round 4",
+      "start_time": "2023-12-14 22:32:19",
+      "end_time": "2023-12-14 22:32:22",
+      "matches": [
+        {
+          "player1": {
+            "first_name": "Alexei",
+            "last_name": "Stukov",
+            "birth_date": "1992-02-08",
+            "chess_id": "SH00003",
+            "tournaments_participated": ["Tartarus", "Lavidaloca", "DOTA"]
+          },
+          "score1": 1.0,
+          "player2": {
+            "first_name": "Mira",
+            "last_name": "Han",
+            "birth_date": "2001-03-24",
+            "chess_id": "SH00004",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score2": 0.0
+        },
+        {
+          "player1": {
+            "first_name": "Gerard",
+            "last_name": "DuGalle",
+            "birth_date": "1997-01-24",
+            "chess_id": "SH00000",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score1": 0.0,
+          "player2": {
+            "first_name": "Egon",
+            "last_name": "Stetmann",
+            "birth_date": "2001-01-01",
+            "chess_id": "SH00006",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score2": 1.0
+        },
+        {
+          "player1": {
+            "first_name": "Rory",
+            "last_name": "Swann",
+            "birth_date": "2012-01-01",
+            "chess_id": "SH00007",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score1": 1.0,
+          "player2": {
+            "first_name": "Valerian",
+            "last_name": "Mengsk",
+            "birth_date": "2002-11-02",
+            "chess_id": "SH00005",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score2": 0.0
+        },
+        {
+          "player1": {
+            "first_name": "Samir",
+            "last_name": "Duran",
+            "birth_date": "1993-06-26",
+            "chess_id": "SH00002",
+            "tournaments_participated": ["Tartarus", "DOTA"]
+          },
+          "score1": 0.0,
+          "player2": {
+            "first_name": "Edmund",
+            "last_name": "Duke",
+            "birth_date": "2002-11-02",
+            "chess_id": "SH00001",
+            "tournaments_participated": ["DOTA"]
+          },
+          "score2": 1.0
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "first_name": "Alexei",
+      "last_name": "Stukov",
+      "birth_date": "1992-02-08",
+      "chess_id": "SH00003",
+      "tournaments_participated": ["Tartarus", "Lavidaloca", "DOTA"]
+    },
+    {
+      "first_name": "Egon",
+      "last_name": "Stetmann",
+      "birth_date": "2001-01-01",
+      "chess_id": "SH00006",
+      "tournaments_participated": ["DOTA"]
+    },
+    {
+      "first_name": "Edmund",
+      "last_name": "Duke",
+      "birth_date": "2002-11-02",
+      "chess_id": "SH00001",
+      "tournaments_participated": ["DOTA"]
+    },
+    {
+      "first_name": "Rory",
+      "last_name": "Swann",
+      "birth_date": "2012-01-01",
+      "chess_id": "SH00007",
+      "tournaments_participated": ["DOTA"]
+    },
+    {
+      "first_name": "Gerard",
+      "last_name": "DuGalle",
+      "birth_date": "1997-01-24",
+      "chess_id": "SH00000",
+      "tournaments_participated": ["DOTA"]
+    },
+    {
+      "first_name": "Samir",
+      "last_name": "Duran",
+      "birth_date": "1993-06-26",
+      "chess_id": "SH00002",
+      "tournaments_participated": ["Tartarus", "DOTA"]
+    },
+    {
+      "first_name": "Valerian",
+      "last_name": "Mengsk",
+      "birth_date": "2002-11-02",
+      "chess_id": "SH00005",
+      "tournaments_participated": ["DOTA"]
+    },
+    {
+      "first_name": "Mira",
+      "last_name": "Han",
+      "birth_date": "2001-03-24",
+      "chess_id": "SH00004",
+      "tournaments_participated": ["DOTA"]
+    }
+  ],
+  "description": "Whateva"
+}

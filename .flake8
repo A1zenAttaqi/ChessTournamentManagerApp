@@ -1,0 +1,21 @@
+exclude=
+    .gitignore,
+    __pycache__,
+    data/,
+    reports/,
+    README.md,
+    requirements.txt,
+    venv/
+    .vscode/
+
+filename =
+    main.py,
+    models/
+    controllers/
+    views/
+
+
+max-line-length = 119
+max-doc-length = 119
+
+max-complexity = 10

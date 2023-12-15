@@ -1,0 +1,33 @@
+{
+  "name": "Tartarus",
+  "location": "Hell",
+  "start_date": "2023-12-14",
+  "end_date": "2023-12-15",
+  "number_of_rounds": 4,
+  "current_round": 1,
+  "rounds": [],
+  "players": [
+    {
+      "first_name": "Gerard",
+      "last_name": "DuGalle",
+      "birth_date": "1997-01-24",
+      "chess_id": "SH00000",
+      "tournaments_participated": ["Tartarus"]
+    },
+    {
+      "first_name": "Samir",
+      "last_name": "Duran",
+      "birth_date": "1993-06-26",
+      "chess_id": "SH00002",
+      "tournaments_participated": ["Tartarus"]
+    },
+    {
+      "first_name": "Alexei",
+      "last_name": "Stukov",
+      "birth_date": "1992-02-08",
+      "chess_id": "SH00003",
+      "tournaments_participated": ["Tartarus"]
+    }
+  ],
+  "description": "Welcome to hell"
+}
