@@ -63,7 +63,6 @@ class ReportsController:
     def generate_players_in_tournament_report(self):
         tournament_name = input("Enter the name of the tournament: ")
         tournaments = self.tournament_controller.load_tournaments()
-
         for tournament in tournaments:
             if tournament.name == tournament_name:
                 players = tournament.get_tournament_players()
@@ -72,9 +71,9 @@ class ReportsController:
                     ReportsView.display_players(players)
                 else:
                     print(f"No players found for tournament '{tournament_name}'.")
-                break  
+                break
         else:
-            print(f"Tournament '{tournament_name}' not found.")    
+            print(f"Tournament '{tournament_name}' not found.")
 
     def generate_tournament_rounds_and_matches_report(self):
         """ Generate and display a report for tournament rounds and matches. """
