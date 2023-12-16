@@ -177,16 +177,20 @@ class MatchModel:
         self.match_data[1][1] = score2
 
     @classmethod
-    def from_dict(cls, match_dict):
-        """Deserialize a dictionary to create a MatchModel instance."""
+    def from_dict(cls, match_data):
+        """Create a MatchModel instance from a dictionary."""
+        try:
+            player1 = PlayerModel.from_dict(match_data.get('player1', {}))
+            player2 = PlayerModel.from_dict(match_data.get('player2', {}))
 
-        player1_data = match_dict["player1"]
-        player2_data = match_dict["player2"]
+            match_model = cls(player1, player2)
+            match_model.set_scores(match_data.get('score1', 0.0), match_data.get('score2', 0.0))
 
-        player1, score1 = cls.parse_player_data(player1_data)
-        player2, score2 = cls.parse_player_data(player2_data)
+            return match_model
 
-        return cls(player1, player2, score1, score2)
+        except Exception as e:
+            print(f"Error creating MatchModel from dict: {e}")
+            return cls()
 
     def to_dict(self):
         """Serialize the MatchModel object to a dictionary."""
@@ -209,16 +213,3 @@ class MatchModel:
             },
             "score2": self.match_data[1][1]
         }
-
-    @classmethod
-    def parse_player_data(cls, player_data):
-        """Parse player data from a dictionary."""
-        player = PlayerModel(
-            first_name=player_data["first_name"],
-            last_name=player_data["last_name"],
-            birth_date=player_data["birth_date"],
-            chess_id=player_data["chess_id"],
-            tournaments_participated=player_data.get("tournaments_participated", [])
-        )
-        score = player_data.get("score", 0.0)
-        return player, score

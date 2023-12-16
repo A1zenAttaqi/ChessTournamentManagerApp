@@ -1,5 +1,4 @@
-from tinydb import TinyDB
-import json
+from tinydb import TinyDB, Query
 
 
 class PlayerModel:
@@ -47,20 +46,20 @@ class PlayerModel:
     def save_to_db(self, tournament_name=None):
         """ Save player information to the database. """
         player_data = self.to_dict()
-        self.players_db.insert(player_data)
+
+        player_query = Query()
+        existing_player = self.players_db.get(player_query.chess_id == self.chess_id)
+
+        if existing_player:
+            self.players_db.update(player_data, player_query.chess_id == self.chess_id)
+        else:
+            self.players_db.insert(player_data)
 
         if tournament_name:
-            playerdb_json_path = 'data/players/players_db.json'
-            with open(playerdb_json_path, 'r') as file:
-                playerdb = json.load(file)
+            if 'tournaments_participated' not in player_data:
+                player_data['tournaments_participated'] = []
 
-            for player_info in playerdb['_default'].values():
-                if player_info['chess_id'] == self.chess_id:
-                    if 'tournaments_participated' not in player_info:
-                        player_info['tournaments_participated'] = []
+            if tournament_name not in player_data['tournaments_participated']:
+                player_data['tournaments_participated'].append(tournament_name)
 
-                    player_info['tournaments_participated'].append(tournament_name)
-                    break
-
-            with open(playerdb_json_path, 'w') as file:
-                json.dump(playerdb, file, indent=2)
+                self.players_db.update(player_data, player_query.chess_id == self.chess_id)
