@@ -1,7 +1,6 @@
 import os
 from models.tournament_model import TournamentModel, RoundModel, MatchModel
 from views.tournament_view import TournamentView
-import json
 from controllers.player_controller import PlayerController
 import random
 from datetime import datetime
@@ -61,16 +60,6 @@ class TournamentController:
         tournament = TournamentModel.load_from_file(file_path)
         return tournament
 
-    def save_tournament_to_file(self, tournament):
-        """ Save a tournament to a file. """
-        with open(tournament.file_path, 'w') as file:
-            json.dump(tournament.to_dict(), file)
-
-    def save_tournaments(self):
-        """ Save all tournaments to files. """
-        for tournament in self.tournaments:
-            self.save_tournament_to_file(tournament)
-
     def create_tournament(self):
         """ Create a new tournament and save it to a file. """
         tournament_info = TournamentView.get_tournament_info()
@@ -88,27 +77,6 @@ class TournamentController:
         tournament.save_to_file()
 
         print(f"Le tournoi '{tournament.name}' a été créé avec succès.")
-
-    def load_players_from_file(self, file_path):
-        """ Load player data from a file. """
-        try:
-            with open(file_path, 'r') as file:
-                players_data = json.load(file)
-                return players_data
-        except FileNotFoundError:
-            print(f"File not found: {file_path}")
-            return None
-
-    def register_players_from_file(self, tournament, file_path):
-        """ Register players for a tournament from a file. """
-        players_data = self.load_players_from_file(file_path)
-
-        if players_data:
-            for player in players_data:
-                chess_id = player.get('Chess_id', '')
-                if chess_id:
-                    tournament.register_player(chess_id)
-                    print(f"Player with chess ID {chess_id} registered for the tournament.")
 
     def select_tournament(self):
         """ Select a tournament from the list. """

@@ -34,20 +34,6 @@ class PlayerController:
         new_player.save_to_db()
         PlayerView.show_player_registered_confirmation(new_player)
 
-    def save_players(self):
-        """ Save player data to the database. """
-
-        serialized_players = [player.to_dict() for player in self.players]
-        existing_ids = {player['Chess_id'] for player in self.players_db.all()}
-
-        for serialized_player in serialized_players:
-            player_id = serialized_player['Chess_id']
-            if player_id not in existing_ids:
-                self.players_db.insert(serialized_player)
-            else:
-                player_query = Query()
-                self.players_db.update(serialized_player, player_query.Chess_id == player_id)
-
     def view_player_details(self):
         """ View details of a specific player. """
         player_id = PlayerView.get_player_id()
